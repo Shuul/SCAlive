@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<add sel="//index">
+<!-- BEGIN STATIONS -->
+	<entry name="station_arg_shipyard_dabase_01" value="extensions\deadairsupplement\assets\structures\station_arg_shipyard_dabase_01"/>
+	<entry name="station_arg_tradestation_dabase_01" value="extensions\deadairsupplement\assets\structures\station_arg_tradestation_dabase_01"/>
+	<entry name="station_arg_wharf_dabase_01" value="extensions\deadairsupplement\assets\structures\station_arg_wharf_dabase_01"/>
+	<entry name="station_par_shipyard_dabase_01" value="extensions\deadairsupplement\assets\structures\station_par_shipyard_dabase_01"/>
+	<entry name="station_par_tradestation_dabase_01" value="extensions\deadairsupplement\assets\structures\station_par_tradestation_dabase_01"/>
+	<entry name="station_par_wharf_dabase_01" value="extensions\deadairsupplement\assets\structures\station_par_wharf_dabase_01"/>
+	<entry name="station_tel_shipyard_dabase_01" value="extensions\deadairsupplement\assets\structures\station_tel_shipyard_dabase_01"/>
+	<entry name="station_tel_tradestation_dabase_01" value="extensions\deadairsupplement\assets\structures\station_tel_tradestation_dabase_01"/>
+	<entry name="station_tel_wharf_dabase_01" value="extensions\deadairsupplement\assets\structures\station_tel_wharf_dabase_01"/>
+<!-- END STATIONS -->
+<!-- BEGIN HAT -->
+	<entry name="Cluster_DA2HAT1" value="extensions\deadairsupplement\assets\environments\cluster\cluster_da2hat1" />
+	<entry name="Cluster_DA2HAT2" value="extensions\deadairsupplement\assets\environments\cluster\cluster_da2hat2" />
+<!-- END HAT -->
+<!-- BEGIN ALI -->
+	<entry name="Cluster_DA2ALI1" value="extensions\deadairsupplement\assets\environments\cluster\cluster_da2ali1" />
+	<entry name="Cluster_DA2ALI2" value="extensions\deadairsupplement\assets\environments\cluster\cluster_da2ali2" />
+<!-- END ALI -->
+<!-- BEGIN SCA -->
+	<entry name="Cluster_DA2SCA1" value="extensions\deadairsupplement\assets\environments\cluster\cluster_da2sca1" />
+	<entry name="Cluster_DA2SCA2" value="extensions\deadairsupplement\assets\environments\cluster\cluster_da2sca2" />
+<!-- END SCA -->
+</add>
+</diff>

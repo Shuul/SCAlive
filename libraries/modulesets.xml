@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<diff>
+<add sel="//modulesets">
+  <!-- <set id="datradestation_teladi"   name="{20112,4301}" race="teladi"  type="tradingstation" macro="station_tel_tradestation_dabase_01_macro" player="true" constructionvesselrequired="true" />
+
+  <set id="dashipyard_teladi"   name="{20112,4201}" race="teladi"  type="shipyard" macro="station_tel_shipyard_dabase_01_macro" player="true" constructionvesselrequired="true" />
+
+  <set id="dawharf_teladi"   name="{20112,4201}" race="teladi"  type="wharf" macro="station_tel_wharf_dabase_01_macro" player="true" constructionvesselrequired="true" /> -->
+</add>
+</diff>

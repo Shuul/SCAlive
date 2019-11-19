@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<add sel="//groups">
+  <!-- <group name="datradestation_tel">
+    <select constructionplan="datel_tradestation" />
+  </group>
+
+  <group name="dashipyard_tel">
+    <select constructionplan="datel_shipyard" />
+  </group>
+  
+  <group name="dawharf_tel">
+    <select constructionplan="datel_wharf" />
+  </group> -->
+
+</add>
+</diff>

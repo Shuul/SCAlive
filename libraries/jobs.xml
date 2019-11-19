@@ -1,0 +1,1272 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<!-- Clusters: 85 = 40 vanilla + 39 DAG + 6 DAGS-->
+<!-- Sectors: 105 = 60 vanilla + 39 DAG + 6 DAGS-->
+<!-- Trading intermediates per sector 1L, 1M, 2S-->
+<!-- Trading products per sector 1L, 1M, 2S-->
+<add sel="//jobs">
+<!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY -->
+  <job id="scaleplate_bio_trader_l" name="{20204,1301}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="teladi_agriculture"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_bio_trader_m" name="{20204,1401}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="teladi_agriculture"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_food_trader_s" name="{20204,1801}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="teladi_agriculture"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_energycell_trader_l" name="{20204,101}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="energy"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_energycell_trader_m" name="{20204,201}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="energy"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_energycell_trader_s" name="{20204,201}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="energy"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_equipment_trader_l" name="{20204,301}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="equipment"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_equipment_trader_m" name="{20204,401}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="equipment"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_construction_trader_l" name="{20204,401}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="construction_stations"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_construction_trader_m" name="{20204,401}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="construction_stations"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_refinedgas_trader_l" name="{20204,501}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="refined_gas"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_refinedgas_trader_m" name="{20204,601}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="refined_gas"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_refinedmineral_trader_l" name="{20204,501}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="refined_mineral"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_refinedmineral_trader_m" name="{20204,601}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="refined_mineral"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_tech_trader_l" name="{20204,301}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="tech"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_tech_trader_m" name="{20204,401}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="tech"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="scaleplate_tech_trader_s" name="{20204,401}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="tech"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_water_trader_l" name="{20204,1501}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="water"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_water_trader_m" name="{20204,1601}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="water"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+<!-- MINERS -->
+  <job id="scaleplate_free_miner_l_liquid" name="{20204,5701}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="gases"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, miner]" size="ship_l"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge" regionbasket="gases"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[miner, liquid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+      <cargo>
+        <wares multiple="true">
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+
+  <job id="scaleplate_free_miner_m_liquid" name="{20204,5701}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="gases"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, miner]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge" regionbasket="gases"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[miner, liquid]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+
+  <job id="scaleplate_free_miner_l_mineral" name="{20204,5601}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="minerals"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, miner]" size="ship_l"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+
+  <job id="scaleplate_free_miner_m_mineral" name="{20204,5601}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="minerals"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, miner]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[miner, solid]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+  <job id="scaleplate_free_miner_s_mineral" name="{20204,5601}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="minerals"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, miner]" size="ship_s"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge" regionbasket="minerals"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[miner, solid]" size="ship_s"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+
+  <job id="scaleplate_free_miner_l_ice" name="{20204,2001}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="ice"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, miner]" size="ship_l"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge" regionbasket="ice"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[miner, solid]" size="ship_l"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+
+  <job id="scaleplate_free_miner_m_ice" name="{20204,2001}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="MiningRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="ice"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, miner]" size="ship_m"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge" regionbasket="ice"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[miner, solid]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+      <cargo>
+        <wares>
+          <fillpercent min="0" max="100" profile="inversebell"/>
+        </wares>
+      </cargo>
+    </ship>
+  </job>
+<!-- CONSTRUCTION SHIPS -->
+  <job id="scaleplate_construction_vessel_xl" name="{20204,5101}">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="FindBuildTasks" default="true">
+        <param name="maxjumps" value="6"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, builder]" size="ship_xl"/>
+    <quota galaxy="99" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[builder]" size="ship_xl"/>
+      <loadout>
+        <level min="0" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+<!-- CRITICAL ECONOMY JOBS -->
+  <job id="scaleplate_bio_trader_m2" name="{20204,1401}">
+    <modifiers rebuild="true" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="teladi_agriculture"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_energycell_trader_m2" name="{20204,201}">
+    <modifiers rebuild="true" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="energy"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_equipment_trader_m2" name="{20204,401}">
+    <modifiers rebuild="true" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="equipment"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_construction_trader_m2" name="{20204,401}">
+    <modifiers rebuild="true" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="construction_stations"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_refinedgas_trader_m2" name="{20204,601}">
+    <modifiers rebuild="true" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="refined_gas"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_refinedmineral_trader_m2" name="{20204,601}">
+    <modifiers rebuild="true" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="refined_mineral"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_tech_trader_m2" name="{20204,401}">
+    <modifiers rebuild="true" commandeerable="true"/>
+    <orders>
+      <order order="TradeRoutine" default="true">
+        <param name="minbuy" value="0"/>
+        <param name="maxbuy" value="5"/>
+        <param name="minsell" value="0"/>
+        <param name="maxsell" value="5"/>
+      </order>
+    </orders>
+    <basket basket="tech"/>
+    <category faction="scaleplate" tags="[factionlogic, freighter, trader]" size="ship_m"/>
+    <quota galaxy="4" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[trader, container]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+<!-- END SCA ECONOMY --><!-- END SCA ECONOMY --><!-- END SCA ECONOMY --><!-- END SCA ECONOMY --><!-- END SCA ECONOMY --><!-- END SCA ECONOMY --><!-- END SCA ECONOMY --><!-- END SCA ECONOMY -->
+<!-- BEGIN SCA WAR --><!-- BEGIN SCA WAR --><!-- BEGIN SCA WAR --><!-- BEGIN SCA WAR --><!-- BEGIN SCA WAR --><!-- BEGIN SCA WAR --><!-- BEGIN SCA WAR --><!-- BEGIN SCA WAR -->
+  <job id="scaleplate_carrier_patrol_xl_sector" name="{20204,3201}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, carrier]" size="ship_xl"/>
+    <quota galaxy="1" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, carrier]" size="ship_xl"/>
+      <loadout>
+        <level min="0.7" max="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="scaleplate_destroyer_escort_l"/>
+	  <subordinate job="scaleplate_frigate_escort_m"/>
+	  <subordinate job="scaleplate_fighter_escort_s_carrier"/>
+    </subordinates>
+  </job>
+
+  <job id="scaleplate_destroyer_patrol_l_sector" name="{20204,3301}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, destroyer]" size="ship_l"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.7" max="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="scaleplate_destroyer_escort_l"/>
+	  <subordinate job="scaleplate_frigate_escort_m"/>
+    </subordinates>
+  </job>
+
+  <job id="scaleplate_destroyer_patrol_l_comp" name="{20204,3301}" comment="compression">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, destroyer]" size="ship_l"/>
+    <quota galaxy="4" cluster="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.7" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_frigate_patrol_m_sector_exp" name="{20204,2901}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, frigate]" size="ship_m"/>
+    <quota galaxy="396" sector="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="scaleplate_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+
+  <job id="scaleplate_dronecarrier_patrol_m_sector" name="{20204,5001}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, frigate]" size="ship_m"/>
+    <quota galaxy="396" sector="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <units>
+        <unit category="unitcategory.defence" min="8" />
+      </units>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="scaleplate_fighter_patrol_s_zone" name="{20204,2901}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.zone"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, fighter]" size="ship_s"/>
+    <quota galaxy="594" sector="6" zone="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[fighter, heavy]" size="ship_s"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="scaleplate_fighter_escort_s_patrol"/>
+    </subordinates>
+  </job>
+
+  <job id="scaleplate_scout_patrol_s" name="{20204,2801}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Recon" default="true">
+		<param name="exploreupdate" value="true" />
+	  </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, scout]" size="ship_s"/>
+    <quota galaxy="198" sector="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="self" comparison="not"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[scout]" size="ship_s"/>
+      <loadout>
+        <level min="0" max="0.2"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <!-- Escorts -->
+  <job id="scaleplate_destroyer_escort_l" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.invvshape"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="scaleplate_frigate_escort_m"/>
+    </subordinates>
+  </job>
+  
+  <job id="scaleplate_frigate_escort_m" name="{20204,2901}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.dartvertical"/>
+        <param name="formationparam" value="2500m"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[military]" size="ship_m"/>
+    <quota wing="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, medium]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="scaleplate_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+
+  <job id="scaleplate_fighter_escort_s_carrier" name="{20204,2901}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+      </order>
+    </orders>
+    <quota wing="10"/>
+    <category faction="scaleplate" tags="[military, fighter]" size="ship_s"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, fighter, selection]" size="ship_s"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_fighter_escort_s_frigate" name="{20204,2901}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <quota wing="3"/>
+    <category faction="scaleplate" tags="[military, fighter]" size="ship_s"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, fighter, selection]" size="ship_s"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_fighter_escort_s_patrol" name="{20204,2901}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[military, fighter]" size="ship_s"/>
+    <quota wing="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, fighter, light]" size="ship_s"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+<!-- END SCA WAR --><!-- END SCA WAR --><!-- END SCA WAR --><!-- END SCA WAR --><!-- END SCA WAR --><!-- END SCA WAR --><!-- END SCA WAR --><!-- END SCA WAR -->
+<!-- BEGIN SCA PLUNDER --><!-- BEGIN SCA PLUNDER --><!-- BEGIN SCA PLUNDER --><!-- BEGIN SCA PLUNDER --><!-- BEGIN SCA PLUNDER --><!-- BEGIN SCA PLUNDER --><!-- BEGIN SCA PLUNDER --><!-- BEGIN SCA PLUNDER -->
+  <job id="scaleplate_frigate_plunder_m_sector" name="{20204,4301}" comment="">
+    <modifiers commandeerable="false"/>
+    <orders>
+      <order order="Plunder" default="true">
+        <param name="range_internal" value="'cluster'" />
+        <param name="plundermode" value="1" />
+		<param name="checkrelation" value="true" />
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[plunderer]" size="ship_m"/>
+    <quota galaxy="10" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="enemy" comparison="le"/>
+    <environment buildatshipyard="true"/>
+	<basket basket="pirate_container"/>
+    <ship>
+      <select faction="scaleplate" tags="[plunderer]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="scaleplate_destroyer_plunder_l_sector" name="{20204,4101}" comment="">
+    <modifiers commandeerable="false"/>
+    <orders>
+      <order order="Plunder" default="true">
+        <param name="range_internal" value="'cluster'" />
+        <param name="plundermode" value="1" />
+		<param name="checkrelation" value="true" />
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[plunderer]" size="ship_l"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="enemy" comparison="le"/>
+    <environment buildatshipyard="true"/>
+	<basket basket="pirate_container"/>
+    <ship>
+      <select faction="scaleplate" tags="[plunderer]" size="ship_m"/>
+      <loadout>
+        <level min="0.7" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+  </job>
+<!-- END SCA PLUNDER --><!-- END SCA PLUNDER --><!-- END SCA PLUNDER --><!-- END SCA PLUNDER --><!-- END SCA PLUNDER --><!-- END SCA PLUNDER --><!-- END SCA PLUNDER --><!-- END SCA PLUNDER -->
+<!-- SCA RAIDERS --><!-- SCA RAIDERS --><!-- SCA RAIDERS --><!-- SCA RAIDERS --><!-- SCA RAIDERS --><!-- SCA RAIDERS --><!-- SCA RAIDERS --><!-- SCA RAIDERS -->
+  <job id="scaleplate_frigate_raider_m_sector" name="{20204,3401}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+		<param name="pursuetargets" value="true"/>
+		<param name="includeroute" value="false"/>
+		<param name="allowothertargets" value="false"/>
+		<param name="targetpurposes" value="[purpose.trade, purpose.mine]"/>
+      </order>
+    </orders>
+    <category faction="scaleplate" tags="[factionlogic, military, frigate]" size="ship_m"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="scaleplate" relation="enemy" comparison="le"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="scaleplate" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="scaleplate" overridenpc="true"/>
+    </ship>
+	<subordinates>
+      <subordinate job="scaleplate_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+  <job id="ministry_frigate_raider_m_sector" name="{20204,3401}" comment="">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.sector"/>
+		<param name="pursuetargets" value="true"/>
+		<param name="includeroute" value="false"/>
+		<param name="allowothertargets" value="false"/>
+		<param name="targetpurposes" value="[purpose.trade, purpose.mine]"/>
+      </order>
+    </orders>
+    <category faction="ministry" tags="[factionlogic, military, frigate]" size="ship_m"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="ministry" relation="enemy" comparison="le"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="ministry" tags="[military, frigate]" size="ship_m"/>
+      <loadout>
+        <level min="0.5" max="1.0"/>
+		<variation exact="0"/>
+      </loadout>
+      <owner exact="ministry" overridenpc="true"/>
+    </ship>
+	<subordinates>
+      <subordinate job="ministry_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+</add>
+<remove sel="//jobs/job[@id='scaleplate_smuggler_s']" />
+<remove sel="//jobs/job[@id='scaleplate_plunderer_l_cluster']" />
+<remove sel="//jobs/job[@id='scaleplate_scavenger_m_cluster']" />
+</diff>
+

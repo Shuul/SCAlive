@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<diff >
+<add sel="//stations">
+
+  <!-- <station id="datradestation_tel" group="datradestation_tel">
+    <category tags="datradestation" faction="[teladi, ministry, scaleplate]" />
+  </station>
+
+
+  <station id="dashipyard_tel" group="dashipyard_tel">
+    <category tags="dashipyard" faction="[teladi, ministry, scaleplate]" />
+  </station>
+
+  <station id="dawharf_tel" group="dawharf_tel">
+    <category tags="dawharf" faction="[teladi, ministry, scaleplate]" />
+  </station> -->
+  
+</add>
+</diff>

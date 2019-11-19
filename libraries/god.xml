@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<diff>
+<add sel="//god/stations">
+<!-- SCA -->
+	<!-- <station id="shipyard_scaleplate_01" race="teladi" owner="scaleplate" type="shipyard">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+      <location class="zone" macro="ZoneDAGO6_Cluster_DA2SCA1_Sector001_macro" />
+      <station>
+        <select faction="scaleplate" tags="[dashipyard]" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+      </station>
+    </station>
+
+    <station id="wharf_scaleplate_01" race="teladi" owner="scaleplate" type="wharf">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+      <location class="zone" macro="ZoneDAGO3_Cluster_DA2SCA1_Sector001_macro" />
+      <station>
+        <select faction="scaleplate" tags="[dawharf]" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+      </station>
+    </station> -->
+	
+	<!-- <station id="sca_defence_cluster_42_sector002" race="teladi" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+      <location class="zone" macro="ZoneDAGO4_Cluster_42_Sector002_macro" />
+      <station>
+        <select faction="scaleplate" tags="[defence]" />
+      </station>
+    </station>
+	
+	<station id="sca_defence_cluster_DA2SCA1_sector001" race="teladi" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+      <location class="zone" macro="ZoneDAGO1_Cluster_DA2SCA1_Sector001_macro" />
+      <station>
+        <select faction="scaleplate" tags="[defence]" />
+      </station>
+    </station>
+	
+	<station id="sca_defence_cluster_DA2SCA2_sector001" race="teladi" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+      <location class="zone" macro="ZoneDAGO1_Cluster_DA2SCA2_Sector001_macro" />
+      <station>
+        <select faction="scaleplate" tags="[defence]" />
+      </station>
+    </station>
+ -->
+	<!-- <product id="sca_advancedcomposites" ware="advancedcomposites" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="advancedcomposites" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_advancedelectronics" ware="advancedelectronics" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="advancedelectronics" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_antimattercells" ware="antimattercells" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <region ware="hydrogen" max="80000" />
+      </location>
+      <module>
+        <select ware="antimattercells" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_antimatterconverters" ware="antimatterconverters" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="antimatterconverters" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_claytronics" ware="claytronics" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="claytronics" race="teladi" />
+      </module>
+    </product>
+
+    <product id="sca_dronecomponents" ware="dronecomponents" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="dronecomponents" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_energycells" ware="energycells" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" sector="6" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.1" max="0.5" maxbound="false" />
+        <sunlight min="1" max="3" />
+      </location>
+      <module>
+        <select ware="energycells" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_engineparts" ware="engineparts" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="engineparts" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_fieldcoils" ware="fieldcoils" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="fieldcoils" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_graphene" ware="graphene" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <region ware="methane" max="80000" />
+      </location>
+      <module>
+        <select ware="graphene" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_hullparts" ware="hullparts" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="8" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="hullparts" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_medicalsupplies" ware="medicalsupplies" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="6" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="medicalsupplies" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_microchips" ware="microchips" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="microchips" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_missilecomponents" ware="missilecomponents" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="missilecomponents" race="teladi"/>
+      </module>
+    </product>
+	
+	<product id="sca_nostropoil" ware="nostropoil" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="nostropoil" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_plasmaconductors" ware="plasmaconductors" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="plasmaconductors" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_quantumtubes" ware="quantumtubes" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="quantumtubes" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_scanningarrays" ware="scanningarrays" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="scanningarrays" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_shieldcomponents" ware="shieldcomponents" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="shieldcomponents" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_siliconwafers" ware="siliconwafers" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="4" sector="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <region ware="silicon" max="80000"/>
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="siliconwafers" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_smartchips" ware="smartchips" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.4" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="smartchips" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_spaceweed" ware="spaceweed" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge" solitary="true">
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="spaceweed" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_spices" ware="spices" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="spices" race="teladi"/>
+      </module>
+    </product>
+	
+	<product id="sca_sunriseflowers" ware="sunriseflowers" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="sunriseflowers" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_superfluidcoolant" ware="superfluidcoolant" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <region ware="helium" max="80000" />
+      </location>
+      <module>
+        <select ware="superfluidcoolant" race="teladi"/>
+      </module>
+    </product>
+	
+	<product id="sca_swampplant" ware="swampplant" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="2" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="swampplant" race="teladi"/>
+      </module>
+    </product>
+	
+	<product id="sca_teladianium" ware="teladianium" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="4" sector="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <region ware="ore" max="80000" />
+        <economy min="0.1" max="0.5" maxbound="false" />
+      </location>
+      <module>
+        <select ware="teladianium" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_turretcomponents" ware="turretcomponents" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="turretcomponents" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_water" ware="water" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="4" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <region ware="ice" max="80000" />
+      </location>
+      <module>
+        <select ware="water" race="teladi"/>
+      </module>
+    </product>
+
+    <product id="sca_weaponcomponents" ware="weaponcomponents" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="3" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[scaleplate]" relation="self" comparison="ge">
+        <economy min="0.6" max="1.0" maxbound="false" />
+      </location>
+      <module>
+        <select ware="weaponcomponents" race="teladi"/>
+      </module>
+    </product> -->
+  </add>
+</diff>
+

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<add sel="//index">
+<!-- BEGIN STATIONS -->
+	<entry name="station_arg_tradestation_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_arg_tradestation_dabase_01_macro" />
+	<entry name="station_par_tradestation_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_par_tradestation_dabase_01_macro" />
+	<entry name="station_tel_tradestation_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_tel_tradestation_dabase_01_macro" />
+	<entry name="station_arg_shipyard_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_arg_shipyard_dabase_01_macro" />
+	<entry name="station_par_shipyard_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_par_shipyard_dabase_01_macro" />
+	<entry name="station_tel_shipyard_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_tel_shipyard_dabase_01_macro" />
+	<entry name="station_arg_wharf_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_arg_wharf_dabase_01_macro" />
+	<entry name="station_par_wharf_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_par_wharf_dabase_01_macro" />
+	<entry name="station_tel_wharf_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_tel_wharf_dabase_01_macro" />
+<!-- END STATIONS -->
+<!-- BEGIN HAT -->
+	<entry name="cluster_DA2HAT1_sector*" value="maps\xu_ep2_universe\sectors" />
+	<entry name="cluster_DA2HAT2_sector*" value="maps\xu_ep2_universe\sectors" />
+<!-- END HAT -->
+<!-- BEGIN ALI -->
+	<entry name="cluster_DA2ALI1_sector*" value="maps\xu_ep2_universe\sectors" />
+	<entry name="cluster_DA2ALI2_sector*" value="maps\xu_ep2_universe\sectors" />
+<!-- END ALI -->
+<!-- BEGIN SCA -->
+	<entry name="cluster_DA2SCA1_sector*" value="maps\xu_ep2_universe\sectors" />
+	<entry name="cluster_DA2SCA2_sector*" value="maps\xu_ep2_universe\sectors" />
+<!-- END SCA -->
+</add>
+</diff>
