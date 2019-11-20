@@ -26,6 +26,9 @@ Between -0.0032 and +0.0032 (UI -5...+5) linear interpolation is used, and 0.000
 
 Note: Relations defined here apply only to gamestart. Relations may change through gameplay and/or plot.
 -->
+<!-- 
+  TODO: the faction diff seems fine. i dont know how you envision them acting or how the other races should treat them tho
+ -->
 <replace sel="//factions/faction[@id='scaleplate']/@tags"> protective watchdoguser privateloadout privateship publicship plunder</replace>
 <remove sel="//factions/faction[@id='scaleplate']/signals"></remove>
 <replace sel="//factions/faction[@id='scaleplate']/color"><color r="255" g="134" b="11" /></replace>

@@ -1,0 +1,8 @@
+<!-- 
+    TODO:
+    we might get a lot from making mixed shipgroups(especially ones that include ships from shipmods) 
+    so we make groups here and in ships.xml give them tags but leave the actual use of those jobs/md thigns 
+    to be in another mod like 
+    SCAlive_ship_exapansion
+    that way we can set a dependency on just that submod to listen for whatever ship mods we support
+ -->

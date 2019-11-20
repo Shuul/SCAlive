@@ -1,7 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?> 
 <diff>
 <add sel="//god/stations">
-<!-- SCA -->
+<!-- 
+  
+  SCA 
+  TODO: these entrues will decide where scaleplate space is so you must choose a location
+    might want to have a pretty random loadout here
+  -->
+
+  <station id="shipyard_scaleplate_01" race="teladi" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+
+      <location class="zone" macro="zone001_cluster_34_sector001_macro" />
+      <station>
+        <select faction="teladi" tags="[shipyard]" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+      </station>
+    </station>
+    <station id="wharf_scaleplate_01" race="teladi" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+      <location class="zone" macro="zone005_cluster_34_sector001_macro" />
+      <station>
+        <select faction="teladi" tags="[wharf]" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+      </station>
+    </station>
+
+    <station id="equipmentdock_scaleplate_01" race="teladi" owner="scaleplate" type="factory">
+      <quotas>
+        <quota galaxy="1" zone="1" />
+      </quotas>
+      <location class="zone" macro="zone001_cluster_09_sector001_macro" />
+      <station>
+        <select faction="teladi" tags="[equipmentdock]" />
+        <loadout>
+          <level exact="1.0" />
+        </loadout>
+      </station>
+    </station>
+
+    <station id="ringstation_scaleplate_01" race="teladi" owner="scaleplate" type="tradingstation">
+      <quotas>
+        <quota galaxy="1" />
+      </quotas>
+      <location class="zone" macro="zone004_cluster_01_sector002_macro" />
+      <position x="18152.45703125" y="-24" z="30038.3740234375" pitch="0" roll="0" />
+      <station ref="tradestation_tel_ring">
+        <loadout>
+          <level exact="0.75"/>
+        </loadout>
+      </station>
+    </station>
+  </add>
+  
 	<!-- <station id="shipyard_scaleplate_01" race="teladi" owner="scaleplate" type="shipyard">
       <quotas>
         <quota galaxy="1" zone="1" />
@@ -58,6 +117,13 @@
       </station>
     </station>
  -->
+ <!-- 
+   TODO: these should populate the space defined by the stations above
+    100 possible stations would be a decent amount here. you could go 200 if you want them to be standalone or down to 0 if they have allies
+    my preference is no more than 20 but im not married to any way we could do this
+   
+  -->
+ <add sel="//god/products">
 	<!-- <product id="sca_advancedcomposites" ware="advancedcomposites" owner="scaleplate" type="factory">
       <quotas>
         <quota galaxy="2" />

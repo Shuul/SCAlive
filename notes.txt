@@ -1,0 +1,6 @@
+i can see us totally removing the assets folder and the unique construction stuff. 
+if you have time, you might want to construct, by hand, some plans that you think are cool to be used 
+
+jackthestripper's mod scavengers has an ai order to it that is pretty amazing basically the faction grows by collecting loot drops
+
+let me know if you want me to focus on a particular part of all this

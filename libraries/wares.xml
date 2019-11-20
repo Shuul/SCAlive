@@ -186,5 +186,7 @@
 <add sel="//wares/ware[@id='module_tel_stor_solid_l_01']"><owner faction="scaleplate" /></add>
 <add sel="//wares/ware[@id='module_tel_stor_solid_m_01']"><owner faction="scaleplate" /></add>
 <add sel="//wares/ware[@id='module_tel_stor_solid_s_01']"><owner faction="scaleplate" /></add>
-<add sel="//wares/ware[@id='module_gen_build_dockarea_m_01']"><owner faction="ministry" /></add>
+<!-- 
+  TODO:  you probably just missed removing this one
+    <add sel="//wares/ware[@id='module_gen_build_dockarea_m_01']"><owner faction="ministry" /></add> -->
 </diff>

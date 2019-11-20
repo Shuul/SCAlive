@@ -2,6 +2,9 @@
 <diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 <add sel="//index">
 <!-- BEGIN STATIONS -->
+<!-- 
+	TODO: idk what he actually did with these plans. my instinct is that we dont need any macros or component diffs but he might have done some custom construction plan stuff idk
+ -->
 	<entry name="station_arg_tradestation_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_arg_tradestation_dabase_01_macro" />
 	<entry name="station_par_tradestation_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_par_tradestation_dabase_01_macro" />
 	<entry name="station_tel_tradestation_dabase_01_macro" value="extensions\deadairsupplement\assets\structures\macros\station_tel_tradestation_dabase_01_macro" />

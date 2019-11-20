@@ -6,6 +6,15 @@
 <!-- Trading products per sector 1L, 1M, 2S-->
 <add sel="//jobs">
 <!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY --><!-- BEGIN SCA ECONOMY -->
+ 
+ <!-- 
+
+   TODO: most  of the player perception of the identitity of this faction will come from these jobs. 
+    obviously the quotas here are absurd and you might not even want many of these jobs or would favor piratey jobs in their stead
+    to me an l bio trader is a wasted opportunity for an l trader with 8 fighters to lool like actual pirates...
+
+  -->
+ 
   <job id="scaleplate_bio_trader_l" name="{20204,1301}">
     <modifiers rebuild="false" commandeerable="true"/>
     <orders>
@@ -733,7 +742,8 @@
       <owner exact="scaleplate" overridenpc="true"/>
     </ship>
   </job>
-  
+    
+
   <job id="scaleplate_energycell_trader_m2" name="{20204,201}">
     <modifiers rebuild="true" commandeerable="true"/>
     <orders>
