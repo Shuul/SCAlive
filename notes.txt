@@ -4,3 +4,26 @@ if you have time, you might want to construct, by hand, some plans that you thin
 jackthestripper's mod scavengers has an ai order to it that is pretty amazing basically the faction grows by collecting loot drops
 
 let me know if you want me to focus on a particular part of all this
+
+--SHUUL--
+Let me write down the vision I had for this mod.
+AI: I want SCA ships to actually bring what they steal to station and try to sell it, is it possible to update AI scripts for this (plunder order I mean). Or they can try to sell goods they steal to oterh stations
+SCA should operate without their own sector, with no spawened ships (if possible)
+
+Stations/production: ilegal goods mostly as production. shipyards/warfs deep in random neutral sector (with additional defences etc, basically making them pirate fortresses, as defence fleets may not be there), quantity depends on how much goods they stolen and sold (mmaybe like in scavanger mod?), while having minimum of 1 of each. It would be also cool to make them buy illegal wares. They should rebuild in random neutral space if destroyed. 
+Do they need their own production of ship components to run smoothly? Or they can just buy from other factions?
+
+Ships: use argon and teladi(preferable) ships. Any apporpriate modded in ship can be used as you suggested. I also think about making them use other paintjobs, there are few rusty or with a bit of red in game, to make them closer to X3 pirates. Maybe we should remove logo for them?
+
+Jobs: SCA ships should maintain vanilla identity change so its not that obvious!
+- I was thinking about freighter convoys with fighter escorts, to protect them from few police ships.
+Im not sure how much trading jobs they really need, any idea on these?
+- Plundering behemothes and phoenix should have few fighter escorts, this job should not expire, I wonder if it will work correctly though
+- Can use following "bands" of ships for pirating:
+3 S fighters - quota 15 in galaxy 
+8 S fighters - quota 10 in galaxy 
+2 M ships  - quota 10 in galaxy 
+5 M ships  - quota 5 in galaxy 
+3 M ships with escorts  - quota 10 in galaxy 
+L destroyer with fighter escorts - quota 7 in galaxy 
+2 L destoyer with fighter escort -  - quota 5 in galaxy 
