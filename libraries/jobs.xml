@@ -1278,5 +1278,8 @@
 <remove sel="//jobs/job[@id='scaleplate_smuggler_s']" />
 <remove sel="//jobs/job[@id='scaleplate_plunderer_l_cluster']" />
 <remove sel="//jobs/job[@id='scaleplate_scavenger_m_cluster']" />
+<remove sel="//jobs/job[@id='scaleplate_plunderer_m_cluster']"/>
+<remove sel="//jobs/job[@id='scaleplate_scavenger_sm_deepspace']"/>
+<remove sel="//jobs/job[@id='scaleplate_fighter_escort_s']"/>
 </diff>
 
