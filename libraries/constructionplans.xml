@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 
-<!-- TODO: check this against the vanilla plans to see if it cool or just dead being dead and not understanding something -->
+<!-- TODO: check this against the vanilla plans to see if it is cool or just dead being dead and not understanding something -->
 <!-- <add sel="//plans"> -->
 <!-- TEL Shipyard -->
 <!-- <plan id="datel_shipyard" name="{20102,1331}">

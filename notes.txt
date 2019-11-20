@@ -27,3 +27,162 @@ Im not sure how much trading jobs they really need, any idea on these?
 3 M ships with escorts  - quota 10 in galaxy 
 L destroyer with fighter escorts - quota 7 in galaxy 
 2 L destoyer with fighter escort -  - quota 5 in galaxy 
+
+--mewo--
+
+We(you) :) should do some stuff to test the plunder order. I will setup an md thing for you but you will have to edit it for each test. 
+it would suck to make a faction around plunder and have plunder take a shit on our work. 
+it will be a bit before i get around to making the test setup as itll probably take a bit of effort to comment it like sirnukes does
+
+YOU ACTUALLY NEED SOMETHING LIKE DEBUG_FOR_ALL TO TEST FACTION STUFF SO INSTALL IT AND LEARN TO USE IT/edit it to your will
+
+idk if you have the extension setup on your editor but this is how each of them deal with the jdk part
+C:\Users\alby\AppData\Roaming\Code\User\settings.json
+
+"xmlLang.javaHome": "C:\\Program Files\\Java\\jdk1.8.0_201",
+"java.home": "C:\\Program Files\\Java\\jdk1.8.0_201",
+
+DO NOT WRITE ANY JOBS/GOD WITHOUT THE XSD HOOKED UP FOR CODE COMPLETE. they have many more options than are expressed well in vanilla
+
+"AI: I want SCA ships to actually bring what they steal to station and try to sell it"
+    this is an OR against a normal trade order. any ship participating in plunder is going to basically be a drain on any "real" sca econ
+    I am fine with having them all run plunder and buffing the other faction jobs local to their stations
+    I see that as a preferred solution over giving them the large numbers of trade ships the vanilla factions have
+    basically the the larger the area a faction holds the more god and jobs they need to function since jobs need to be restricted to relatively small areas
+
+    
+
+"Jobs: SCA ships should maintain vanilla identity change so its not that obvious!"
+    this is true owner secrecy stuff right?
+    im all for this but neither one of use really understands what we can do with it
+    someone needs to write down their assumptions and test them
+
+Ill assume you meant this as maxquota which is default x2 of quota else the total here would be 800 ships added....
+- Can use following "bands" of ships for pirating:
+3 S fighters - quota 15 in galaxy 
+
+45 
+
+8 S fighters - quota 10 in galaxy 
+
+80 
+
+2 M ships  - quota 10 in galaxy 
+
+20
+
+5 M ships  - quota 5 in galaxy 
+
+25
+
+3 M ships with escorts  - quota 10 in galaxy 
+
+30 
+
+L destroyer with fighter escorts - quota 7 in galaxy 
+
+gonna assume like 2m and 10f 
+
+here is an example from vanilla:
+  <job id="argon_destroyer_patrol_l_sector" name="{20204,3301}" comment="each sector">
+    <modifiers commandeerable="true"/>
+    <orders>
+      <order order="Patrol" default="true">
+        <param name="range" value="class.cluster"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[factionlogic, military, destroyer]" size="ship_l"/>
+    <quota galaxy="6" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="self" comparison="exact"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level exact="1.0"/>
+        <variation exact="0"/>
+      </loadout>
+      <owner exact="argon" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+   <job id="argon_frigate_escort_m" name="{20204,2901}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.dartvertical"/>
+        <param name="formationparam" value="2500m"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="argon" tags="[military]" size="ship_m"/>
+    <quota wing="3"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="argon" tags="[military, medium]" size="ship_m"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="argon" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="argon_fighter_escort_s_frigate"/>
+    </subordinates>
+  </job>
+   <job id="argon_fighter_escort_s_frigate" name="{20204,2901}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <quota wing="4"/>
+    <category faction="argon" tags="[military, fighter]" size="ship_s"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="argon" tags="[military, fighter, selection]" size="ship_s"/>
+      <loadout>
+        <level min="0" max="0.7"/>
+      </loadout>
+      <owner exact="argon" overridenpc="true"/>
+    </ship>
+  </job>
+
+
+91
+
+2 L destoyer with fighter escort -  - quota 5 in galaxy 
+
+gonna assume like 4m and 20f 
+
+120
+
+total: 411 
+    - for a purely plunder faction this is too much (and i think it lacks variety)
+    - none of this considers what you want to do with god
+ 
+
+"Stations/production: ilegal goods mostly as production. shipyards/warfs deep in random neutral sector (with additional defences etc, basically making them pirate fortresses, as defence fleets may not be there), quantity depends on how much goods they stolen and sold (mmaybe like in scavanger mod?), while having minimum of 1 of each. It would be also cool to make them buy illegal wares. They should rebuild in random neutral space if destroyed. 
+Do they need their own production of ship components to run smoothly? Or they can just buy from other factions?"
+
+they would not be able to participate in faction logic without a single block of contiguous space and a full set of jobs/god like argon
+
+
+    i see a few paths here:
+        1. create 3-4 new sectors, copy and adjust jobs/god from argon, paranid or teladi to populate those sectors 
+            THIS IS THE ONLY PATH THAT ALLOWS FACTION LOGIC TO FUNCTION WITHOUT CHEATING (and is my least favorite)
+        2. create some jobs/god specifically to supply sca wharf/shipyard and use plunder order extensively
+            /focus the mod on making plunder/cool jobs for plunder/ways for the player to care about it
+        3. mercilessly cheat whatever faction logic needs to work for sca. give sca and unknown sector or two and give them everything faction logic asks for through md
+            (basically this avoids the extra 300 tradeships and 100 stations from the first path)
+        4. basically ignore a lot of what you want and focus on making really great jobs/stations for sca (which are the part the player sees and would be my preference)
+        5. ignore all the rules and suppress all the errors and do whatever you want in the way you want and hope you can fix the error/cheat/hack around them
+
+"Ships: use argon and teladi(preferable) ships. Any apporpriate modded in ship can be used as you suggested. I also think about making them use other paintjobs, there are few rusty or with a bit of red in game, to make them closer to X3 pirates. Maybe we should remove logo for them?"
+ill take a look at this
+
+if we keep writing giant notes im gonna switch this to .md and make it the readme so we can view it in technicolor on the repo
